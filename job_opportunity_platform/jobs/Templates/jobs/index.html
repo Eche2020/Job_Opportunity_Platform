@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Job Opportunity Platform</title>
+
+		{% load static %}
+		<link rel="stylesheet" href="{% static 'css/index.css' %}" />
+	</head>
+	<body>
+		<!-- Header Section -->
+		<header>
+			<nav class="navbar">
+				<div class="logo">
+					<h1><a href="/">JobFinder</a></h1>
+				</div>
+				<ul class="nav-links">
+					<li><a href="{% url 'job_list' %}">Find Jobs</a></li>
+					<li><a href="{% url 'profile' %}">Profile</a></li>
+					<li><a href="{% url 'login' %}">Login</a></li>
+					<li><a href="{% url 'signIn' %}">Sign Up</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Hero Section -->
+		<section class="hero">
+			<div class="hero-content">
+				<img
+					src="/job_opportunity_platform/jobs/static/image/hero-bg.jpg"
+					alt="" />
+				<h1>Find Your Dream Job</h1>
+				<p>Discover thousands of job opportunities with just one click.</p>
+				<a href="{% url 'job_list' %}" class="cta-button">Browse Jobs</a>
+			</div>
+		</section>
+
+		<!-- Features Section -->
+		<section class="features">
+			<div class="feature">
+				<i class="fa fa-search"></i>
+				<h2>Search Jobs</h2>
+				<p>
+					Find job listings in various industries that match your skills and
+					preferences.
+				</p>
+			</div>
+			<div class="feature">
+				<i class="fa fa-user"></i>
+				<h2>Create a Profile</h2>
+				<p>
+					Build a professional profile to attract recruiters and potential
+					employers.
+				</p>
+			</div>
+			<div class="feature">
+				<i class="fa fa-briefcase"></i>
+				<h2>Get Hired</h2>
+				<p>
+					Apply for jobs and get hired in top companies from all over the world.
+				</p>
+			</div>
+		</section>
+
+		<!-- Job Categories Section -->
+		<section class="job-categories">
+			<h2>Explore Job Categories</h2>
+			<div class="categories">
+				<div class="category">
+					<h3>Tech & IT</h3>
+					<p>Explore jobs in development, design, and IT.</p>
+				</div>
+				<div class="category">
+					<h3>Marketing</h3>
+					<p>Discover marketing and sales positions.</p>
+				</div>
+				<div class="category">
+					<h3>Healthcare</h3>
+					<p>
+						Find jobs in hospitals, clinics, and other healthcare institutions.
+					</p>
+				</div>
+				<div class="category">
+					<h3>Finance</h3>
+					<p>Check out finance, banking, and accounting opportunities.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Call to Action Section -->
+		<section class="cta">
+			<h2>Ready to Take the Next Step?</h2>
+			<p>Sign up now and start applying for jobs today!</p>
+			<a href="{% url 'account_signup' %}" class="cta-button">Join Now</a>
+		</section>
+
+		<!-- Footer -->
+		<footer>
+			<p>&copy; 2024 JobFinder. All Rights Reserved.</p>
+			<ul>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Privacy Policy</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>

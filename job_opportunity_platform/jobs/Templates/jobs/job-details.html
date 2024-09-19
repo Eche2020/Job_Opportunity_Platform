@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Details</title>
+</head>
+<body>
+
+{% block content %}
+  <h2>{{ job.title }}</h2>
+  <p><strong>Company:</strong> {{ job.company.name }}</p>
+  <p><strong>Location:</strong> {{ job.location }}</p>
+  <p><strong>Description:</strong> {{ job.description }}</p>
+{% endblock %}
+</body>
+</html>
